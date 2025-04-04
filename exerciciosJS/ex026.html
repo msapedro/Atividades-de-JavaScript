@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos e quantidades</title>
+</head>
+<body>
+    <h1>
+        Produtos e quantidades
+    </h1>
+    <script>
+        let produto = prompt("Você escolhe entre: " + "\n" + "Coxinha" + "\n" + "Risole" + "\n" + "Uva")
+        alert("O valor da coxinha é: 60 (0001)" + "\n" + "O valor do Risole é: 90 (0002)" + "\n" + "O valor da Uva(unidade) é: 120 (0003)")
+        let codigo = parseInt(prompt("Qual o código do produto? "))
+        let quantidade = parseInt(prompt("Informe quantos produtos são: ")) 
+        if (codigo == "0001") {
+            document.write(`O valor a ser pago é ${(60*quantidade).toLocaleString('pt-BR' , {style: 'currency' , currency: 'BRL'})}`)
+        } else if (codigo == "0002") {
+            document.write(`O valor a ser pago é ${(90*quantidade).toLocaleString('pt-BR' , {style: 'currency' , currency: 'USD'})}`)
+        } else if (codigo == "0003") {
+            document.write(`O valor a ser pago é ${(120*quantidade).toLocaleString('pt-BR' , {style: 'currency' , currency: 'EUR'})}`)
+        }
+    </script>
+</body>
+</html>

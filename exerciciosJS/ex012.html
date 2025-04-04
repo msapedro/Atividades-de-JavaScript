@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <h1>Calculo de IMC</h1>
+    <script>
+        let altura = parseFloat(prompt(`Me diga sua altura em METROS (coloque ponto ao invés de virgula):`))
+        let peso = Number(prompt(`Me fale seu peso em KG:`))
+        document.write(`O seu IMC é ${(peso / altura**2).toFixed(2)}`)
+    </script>
+</body>
+</html>

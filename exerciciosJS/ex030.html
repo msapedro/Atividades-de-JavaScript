@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maçãs</title>
+</head>
+<body>
+    <h1>Maçãs</h1>
+    <script>
+        let quantidade = parseInt(prompt("Quantas maças você comprou? "))
+        if (quantidade < 12) {
+            document.write(`O valor total a ser pago é ${(quantidade*0.50).toLocaleString('pt-BR' , {style: 'currency' , currency: 'BRL'})}`)
+        } else {
+            document.write(`O valor total a ser pago é ${(quantidade*0.40).toLocaleString('pt-BR' , {style: 'currency' , currency: 'BRL'})}`)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes</title>
+</head>
+<body>
+    <h1>Mês</h1>
+    <script>
+        let mes = prompt("Digite o nome do mês: ").toLocaleLowerCase()
+
+        if (mes == 'fevereiro') {
+            document.write(`${mes} tem 28 dias`)
+        } else if (mes == 'janeiro' || mes == 'maio' || mes == 'março' || mes == 'julho' || mes == 'agosto' || mes == 'outubro' || mes == 'dezembro') {
+            document.write(`O ${mes} tem 31 dias.`)
+        }else if (mes == 'abril' || mes == 'setembro' || mes == 'novembro' || mes == 'junho'){
+            document.write(`O ${mes} tem 30 dias.`)
+        } else {
+            document.write(`Este mês é inválido`)
+        }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media ponderada</title>
+</head>
+<body>
+    <h1>Calculando media</h1>
+    <script>
+        let nota1 = Number(prompt('Me de a primeira nota: '))
+        let nota2 = Number(prompt('Me de a segunda nota: '))
+        let nota3 = Number(prompt('Me de a terceira nota: '))
+        let media = (nota1*2 + nota2*3 + nota3*5) / 10
+        document.write(`A média ponderada é: ${media} `)
+        // nota 1 = 5 (5*2 = 10)
+        // nota 2 = 4 (4*3 = 12)
+        // nota 3 = 6 (6*5 = 30)
+        // media = 10 + 12 + 30 / 10
+    </script>
+</body>
+</html>
